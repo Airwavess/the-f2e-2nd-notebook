@@ -1,0 +1,49 @@
+$background-color: #f4f6f7;
+$hover-background-color: #e9ebf4;
+
+.notelist-view-summary {
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  flex-direction: column;
+
+  .notelist-view-summary__note-list-item {
+    width: 300px;
+    position: relative;
+    padding: 16px 28px;
+    border-bottom: 1px solid #e6e6e6;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $hover-background-color;
+    }
+
+    .notelist-view-summary__note-title {
+      margin-top: 0;
+    }
+
+    .notelist-view-summary__note-info {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+      font-weight: 500;
+      align-items: center;
+
+      .notelist-view-summary__note-tags {
+        display: flex;
+        flex-direction: row;
+        .notelist-view-summary__note-tag {
+          margin-right: 8px;
+          padding: 2px 16px;
+          border-radius: 4px;
+          background-color: #ffffff;
+          color: #2f419b;
+        }
+      }
+    }
+  }
+
+  .notelist-view-summary__note-list-item--active {
+    background-color: $hover-background-color;
+  }
+}

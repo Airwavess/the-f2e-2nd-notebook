@@ -1,0 +1,35 @@
+$background-color: #f4f6f7;
+$hover-font-color: white;
+$hover-background-color: #2F419B;
+
+.notelist-view-switch__btn {
+  position: relative;
+
+  svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.notelist-view-switch__list {
+  position: absolute;
+  background-color: $background-color;
+  z-index: 10;
+  box-shadow: 0px 3px 6px #e6e6e6;
+  border: 1px solid #c6c6c6;
+  border-radius: 8px;
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      padding: 8px 24px;
+      display: flex;
+      align-items: center;
+      &:hover {
+        color: $hover-font-color;
+        background-color: $hover-background-color;
+      }
+    }
+  }
+}

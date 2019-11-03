@@ -1,0 +1,8 @@
+const NoteTypes = {
+  CHANGE_VIEW_MODE: 'CHANGE_VIEW_MODE',
+  SELECT_NOTE: 'SELECT_NOTE',
+  UPDATE_NOTE: 'UPDATE_NOTE',
+  CREATE_NOTE: 'CREATE_NOTE'
+}
+
+export default NoteTypes

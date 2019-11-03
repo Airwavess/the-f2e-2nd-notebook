@@ -1,0 +1,66 @@
+$border-color: #d8d8d8;
+$font-color: #555555;
+$background-color: #f4f6f7;
+
+.notelist {
+  background: $background-color;
+  border-right: 1px solid $border-color;
+  color: $font-color;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  .notelist__search {
+    padding: 48px 28px 12px;
+    position: relative;
+    svg {
+      position: absolute;
+      top: 60px;
+      left: 40px;
+    }
+
+    input {
+      width: 260px;
+      height: 36px;
+      background: #e6e6e6;
+      border: 0;
+      border-radius: 6px;
+      padding-left: 40px;
+      font-size: 16px;
+      display: flex;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  .notelist__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 28px;
+
+    .notelist__header-title {
+      display: flex;
+      align-items: center;
+      h3 {
+        margin-right: 8px;
+      }
+    }
+
+    .notelist__header-display-mode {
+      cursor: pointer;
+    }
+  }
+
+  hr {
+    padding: 0;
+    margin: 0;
+    border: 1px solid $border-color;
+  }
+
+  .notelist__list {
+    overflow: auto;
+  }
+}

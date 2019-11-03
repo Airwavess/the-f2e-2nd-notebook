@@ -1,0 +1,43 @@
+$background-color: #f4f6f7;
+$hover-background-color: #e9ebf4;
+
+.notelist-view-list {
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  flex-direction: column;
+
+  .notelist-view-list__note-list-item {
+    position: relative;
+    width: 300px;
+    padding: 0 28px;
+    border-bottom: 1px solid #e6e6e6;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $hover-background-color;
+    }
+
+    .notelist-view-list__note-title {
+      margin-left: 12px;
+    }
+
+    .notelist-view-list__note-info {
+      display: flex;
+      justify-content: space-between;
+      font-weight: 500;
+      align-items: center;
+      .notelist-view-list__note-date {
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+
+  .notelist-view-list__note-list-item--active {
+    background-color: $hover-background-color;
+  }
+}

@@ -1,0 +1,90 @@
+$background-color: #f4f6f7;
+
+.notelist-view-card {
+  padding: 12px 0;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .notelist-view-card__note-list-item {
+    background: linear-gradient(to left bottom, transparent 50%, #e9ebf4 0)
+        no-repeat 100% 0 / 32px 32px,
+      linear-gradient(-135deg, transparent 23px, #fff 0);
+    width: 240px;
+    position: relative;
+    padding: 16px 24px;
+    margin: 12px auto;
+    cursor: pointer;
+    border: 3px solid #f4f6f7;
+
+    &:hover {
+      background: linear-gradient(
+            to left bottom,
+            transparent 35%,
+            #2f419b 35%,
+            #2f419b 50%,
+            #e9ebf4 0
+          )
+          no-repeat 100% 0 / 2em 2em,
+        linear-gradient(to left bottom, transparent 1.5em, #fff 0);
+      clip-path: polygon(
+        0% 0%,
+        calc(100% - 2em) 0%,
+        100% 2em,
+        100% 100%,
+        0% 100%
+      );
+      border: 3px solid #2f419b;
+    }
+
+    .notelist-view-card__note-title {
+      padding-bottom: 12px;
+      border-bottom: 1px solid #e6e6e6;
+    }
+
+    .notelist-view-card__note-content {
+      word-wrap: break-word;
+    }
+
+    .notelist-view-card__note-info {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+      font-weight: 500;
+      align-items: center;
+
+      .notelist-view-card__note-tags {
+        display: flex;
+        flex-direction: row;
+        .notelist-view-card__note-tag {
+          margin-right: 8px;
+          padding: 2px 16px;
+          border-radius: 4px;
+          background-color: #e9ebf4;
+          color: #2f419b;
+        }
+      }
+    }
+  }
+
+  .notelist-view-card__note-list-item--active {
+    background: linear-gradient(
+          to left bottom,
+          transparent 35%,
+          #2f419b 35%,
+          #2f419b 50%,
+          #e9ebf4 0
+        )
+        no-repeat 100% 0 / 2em 2em,
+      linear-gradient(to left bottom, transparent 1.5em, #fff 0) !important;
+    clip-path: polygon(
+      0% 0%,
+      calc(100% - 2em) 0%,
+      100% 2em,
+      100% 100%,
+      0% 100%
+    );
+    border: 3px solid #2f419b;
+  }
+}

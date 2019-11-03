@@ -1,0 +1,137 @@
+$font-color: #555555;
+$tag-font-color: #2f419b;
+$tag-backgroun-color: #e9ebf4;
+
+@mixin note-tag {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 4px 16px;
+  border-radius: 4px;
+  margin-right: 12px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+@mixin file-block {
+  font-size: 14px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  margin: 8px auto;
+  border-radius: 4px;
+
+  div:first-child {
+    display: flex;
+    align-items: center;
+
+    svg {
+      width: 18px;
+      height: 18px;
+      margin-right: 8px;
+    }
+  }
+  div:last-child {
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+
+.note-editor {
+  flex: 1;
+  padding: 36px;
+  color: $font-color;
+
+  .note-editor__note {
+    padding-top: 24px;
+    height: calc(100% - 30px);
+  }
+
+  .note-editor__note-title {
+    input {
+      width: 100%;
+      font-size: 18px;
+      font-weight: 500;
+      border: none;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  .note-editor__note-tags {
+    display: flex;
+    flex-direction: row;
+    margin: 12px auto;
+
+    .note-editor__note-tag {
+      @include note-tag;
+      background-color: $tag-backgroun-color;
+      color: $tag-font-color;
+    }
+    .note-editor__note-add-tag {
+      @include note-tag;
+      border: 1px dashed #c7c7c7;
+      color: #a3a3a3;
+
+      input {
+        border: 0;
+        width: 24px;
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+  .note-editor__note-content {
+    height: calc(100% - 76px);
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    .note-editor__note-textarea {
+      height: 100%;
+
+      textarea {
+        width: 100%;
+        height: 100%;
+        font-size: 14px;
+        border: 0;
+
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+    .note-editor__note-files {
+      margin-top: 8px;
+      margin-bottom: 8px;
+      .note-editor__note-file {
+        @include file-block;
+        background-color: #e9ebf4;
+        color: #2f419b;
+      }
+      .note-editor__note-file-input {
+        span {
+          margin-left: 12px;
+          text-decoration: underline;
+        }
+        label {
+          @include file-block;
+          cursor: pointer;
+          border: 1px dashed #c7c7c7;
+          color: #a3a3a3;
+        }
+        input {
+          display: none;
+        }
+      }
+      .note-editor__note-file-icon {
+        margin-right: 8px;
+      }
+    }
+  }
+}
