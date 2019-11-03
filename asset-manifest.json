@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/the-f2e-2nd-notebook/static/css/main.ef25cb36.chunk.css",
+    "main.js": "/the-f2e-2nd-notebook/static/js/main.30e32ab3.chunk.js",
+    "main.js.map": "/the-f2e-2nd-notebook/static/js/main.30e32ab3.chunk.js.map",
+    "runtime-main.js": "/the-f2e-2nd-notebook/static/js/runtime-main.050e0952.js",
+    "runtime-main.js.map": "/the-f2e-2nd-notebook/static/js/runtime-main.050e0952.js.map",
+    "static/js/2.dc68e44c.chunk.js": "/the-f2e-2nd-notebook/static/js/2.dc68e44c.chunk.js",
+    "static/js/2.dc68e44c.chunk.js.map": "/the-f2e-2nd-notebook/static/js/2.dc68e44c.chunk.js.map",
+    "index.html": "/the-f2e-2nd-notebook/index.html",
+    "precache-manifest.56efdc564739ba752e3aa2f99ff921d3.js": "/the-f2e-2nd-notebook/precache-manifest.56efdc564739ba752e3aa2f99ff921d3.js",
+    "service-worker.js": "/the-f2e-2nd-notebook/service-worker.js",
+    "static/css/main.ef25cb36.chunk.css.map": "/the-f2e-2nd-notebook/static/css/main.ef25cb36.chunk.css.map",
+    "static/media/Dog-01.png": "/the-f2e-2nd-notebook/static/media/Dog-01.36eab2a4.png",
+    "static/media/nights_stay.svg": "/the-f2e-2nd-notebook/static/media/nights_stay.4af24f34.svg",
+    "static/media/wb_sunny.svg": "/the-f2e-2nd-notebook/static/media/wb_sunny.2861d1d3.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.050e0952.js",
+    "static/js/2.dc68e44c.chunk.js",
+    "static/css/main.ef25cb36.chunk.css",
+    "static/js/main.30e32ab3.chunk.js"
+  ]
+}
